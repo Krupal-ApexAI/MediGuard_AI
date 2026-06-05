@@ -85,3 +85,8 @@ pnpm-debug.log*
 # ========================
 *.local
 .firebase/
+
+# ========================
+# Documentation & Prep (Local Only)
+# ========================
+docs/

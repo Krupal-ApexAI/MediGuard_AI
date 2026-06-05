@@ -12,8 +12,9 @@ FEATURES = [
 
 def load_and_train_model():
     global MODEL
-    # Ensure raw string for Windows path
-    csv_path = r"c:\Users\annal\Downloads\hospital_resource_shortage_dataset_1000_rows_cleaned.csv"
+    # Path to local dataset in uploads
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    csv_path = os.path.join(base_dir, "uploads", "hospital_resource_shortage_dataset.csv")
     if not os.path.exists(csv_path):
         print(f"Dataset not found at {csv_path}")
         return False
